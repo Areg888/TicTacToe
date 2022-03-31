@@ -53,7 +53,7 @@ function App() {
     } else if (computerWon) {
       setWinner("O");
     } else {
-      if (squares.every((square) => !!square)) {
+      if (squares.every((square) => square !== null)) {
         newGame();
         return;
       }
