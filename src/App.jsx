@@ -71,6 +71,7 @@ function App() {
           (index) => squares[index] === null
         )[0];
         putComputerAt(winIndex);
+        return;
       }
 
       const linesToBlock = linesThatAre("x", "x", null);
